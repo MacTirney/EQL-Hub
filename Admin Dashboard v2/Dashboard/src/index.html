@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet"">
+        <link rel="stylesheet" href="styles.css">
+        <title>EQL-Hub Responsive Dashboard Design v1</title>
+    </head>
+
+    <body>
+        <!--* Sidebar -->
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <i class='bx bx-grid-alt'></i>
+                <div class="logo-name"><span>EQL</span>Hub</div>
+            </a>
+            <ul class="side-menu">
+                <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+                <li><a href="#"><i class='bx bx-clipboard'></i>Resources</a></li>
+                <li class="active"><a href="#"><i class='bx bx-analyse'></i>Analytics</a></li>
+                <li><a href="#"><i class='bx bx-envelope'></i>Messages</a></li>
+                <li><a href="#"><i class='bx bx-group'></i>Users</a></li>
+                <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+            </ul>
+            <ul class="side-menu">
+                <li>
+                    <a href="#" class="logout">
+                        <i class='bx bx-log-out-circle'></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--* End of Sidebar -->
+
+        <!--* Nav -->
+        <div class="content">
+            <!--* Navbar -->
+            <nav>
+                <i class='bx bx-menu'></i>
+                <form action="#">
+                    <div class="form-input">
+                        <input type="search" placeholder="Search...">
+                        <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                    </div>
+                </form>
+
+                <input type="checkbox" id="theme-toggle" hidden>
+                <label for="theme-toggle" class="theme-toggle"></label>
+                
+                <a href="#" class="notif">
+                    <i class='bx bx-bell'></i>
+                    <span class="count">6</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src='https://media.licdn.com/dms/image/D4E03AQECz6R--YgLhw/profile-displayphoto-shrink_400_400/0/1708704628892?e=1718841600&v=beta&t=tgu2mfPu53pVKoMI3D_Q5vYNohtndi6oqMEJP2FXqnA' alt="profile img"
+                    >
+                </a>
+            </nav>
+            <!--* End of Navbar -->
+
+            <!--* Main Content -->
+                <!--* Header -->
+            <main>
+                <div class="header">
+                    <div class="left">
+                        <h1>Dashboard</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="#">
+                                Analytics
+                            </a></li>
+                            /
+                            <li><a href="#" class="active">Subrentals</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="report">
+                        <i class="bx bx-cloud-download"></i>
+                        <span>Download CSV</span>
+                    </a>
+                </div>
+                <!--* End of Header -->
+
+                <!--* Insights -->
+                <ul class="insights">
+                    <li>
+                        <i class='bx bx-dollar-circle'></i>
+                        <span class="info">
+                            <h3>
+                                316
+                            </h3>
+                            <p>Sub Orders</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-up-arrow-circle'></i>
+                        <span class="info">
+                            <h3>
+                                $70,543
+                            </h3>
+                            <p>Sub Profit</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-down-arrow-circle'></i>
+                        <span class="info">
+                            <h3>
+                                $60,263
+                            </h3>
+                            <p>Sub Cost</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-line-chart'></i>
+                        <span class="info">
+                            <h3>
+                                102
+                            </h3>
+                            <p>Unpaid POs</p>
+                        </span>
+                    </li>
+                </ul>
+                <!--* End of Insights -->
+
+                <!--* Subrentals -->
+                <div class="bottom-data">
+                    <div class="subrentals">
+                        <div class="header">
+                            <i class='bx bx-receipt'></i>
+                            <h3>Recent Subrentals</h3>
+                            <i class='bx bx-filter'></i>
+                            <i class='bx bx-search'></i>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Users</th>
+                                    <th>PO Number</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="https://media.licdn.com/dms/image/D4E03AQFpMS_uvdvNXA/profile-displayphoto-shrink_400_400/0/1708702893186?e=1718841600&v=beta&t=hjVf5dvRjx_bOy8mmSWx7aiC_cdfdI6k7mfuMDGV-2E" alt="Jordan H">
+                                        <p>Jordan H</p>
+                                    </td>
+                                    <td>R-155353</td>
+                                    <td><span class="status process">Processing</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://media.licdn.com/dms/image/D4E03AQEXI8FOzA6-4g/profile-displayphoto-shrink_400_400/0/1694318712875?e=1718841600&v=beta&t=pqv9cbuOxVfPYofgJeaNY9gRMs9kMUF8XKJQ5UUnL_A" alt="Leilanis R">
+                                        <p>Leilanis R</p>
+                                    </td>
+                                    <td>R-155352</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="https://media.licdn.com/dms/image/D4E03AQFasYu9hUXMcg/profile-displayphoto-shrink_400_400/0/1702310083202?e=1718841600&v=beta&t=TqTEHGI7fzc5u6_Uc7SVVUgwnVJYCbhnS2hc01Lm4Fg" alt="Natalie F">
+                                        <p>Natalie F</p>
+                                    </td>
+                                    <td>R-155351</td>
+                                    <td><span class="status paid">Paid</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--* End of Orders -->
+
+                    <!--* Reminders -->
+                    <div class="reminders">
+                        <div class="header">
+                            <i class='bx bx-note'></i>
+                            <h3>Reminders</h3>
+                            <i class='bx bx-filter'></i>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <ul class="task-list">
+                            <li class="completed">
+                                <div class="task-title">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p>Fix PO: R-155327</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="completed">
+                                <div class="task-title">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p>Fix Transfer: T-177182</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                            <li class="not-completed">
+                                <div class="task-title">
+                                    <i class='bx bx-x-circle'></i>
+                                    <p>Transfer in: 6 Esprites for order LAS80174</p>
+                                </div>
+                                <i class='bx bx-dots-vertical-rounded'></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--* End of Reminders -->
+                </div>
+
+            </main>
+
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
