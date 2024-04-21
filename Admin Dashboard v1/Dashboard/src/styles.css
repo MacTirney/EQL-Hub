@@ -232,14 +232,14 @@ aside .sidebar a:hover span {
 }
 
 aside .sidebar .message-count {
-    background-color: var(--color-danger);
+    background-color: var(--color-primary);
     padding: 2px 6px;
     color: var(--color-white);
     font-size: 11px;
     border-radius: var(--border-radius-1);
 }
 
-/** Main Content - Analytics */
+/** Main Content - Dashboard */
 main {
     margin-top: 1.4rem;
 }
@@ -327,12 +327,12 @@ main .analyze .progress .percentage {
     width: 100%;
 }
 
-/** Main Content - New Users */
-main .new-users {
+/** Main Content - Recent Users */
+main .recent-users {
     margin-top: 1.3rem;
 }
 
-main .new-users .user-list {
+main .recent-users .user-list {
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -346,18 +346,18 @@ main .new-users .user-list {
     transition: all 0.3s ease;
 }
 
-main .new-users .user-list:hover {
+main .recent-users .user-list:hover {
     box-shadow: none;
 }
 
-main .new-users .user-list .user {
+main .recent-users .user-list .user {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-main .new-users .user-list .user img {
+main .recent-users .user-list .user img {
     width: 5rem;
     height: 5rem;
     margin-bottom: 0.4rem;
