@@ -1,5 +1,5 @@
 # EQL Hub Design Concepts
-Two design concepts for the LMG EQL Hub application.
+Two design concepts for the EQL Hub application.
 
 ## EQL Hub Dashboard Version 1
 [EQL Hub Dashboard Version 1](https://github.com/MacTirney/EQL-Hub/tree/main/Admin%20Dashboard%20v1/Dashboard/src)
