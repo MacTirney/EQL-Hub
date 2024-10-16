@@ -1,4 +1,3 @@
-
 //* Function - Toggle Menu in Mobile View
 const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
@@ -6,10 +5,22 @@ const closeBtn = document.getElementById('close-btn');
 
 menuBtn.addEventListener('click', () => {
     sideMenu.style.display = 'block';
+    sideMenu.style.left = '0';
 });
 
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
+    sideMenu.style.left = '-100%';
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 769) {
+        sideMenu.style.display = 'block';
+        sideMenu.style.left = '0';
+    } else {
+        sideMenu.style.display = 'none';
+        sideMenu.style.left = '-100%';
+    }
 });
 
 //* Function - Toggle Dark Mode

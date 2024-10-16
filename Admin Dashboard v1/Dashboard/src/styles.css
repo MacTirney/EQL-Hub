@@ -295,7 +295,7 @@ main .analyze svg circle {
     fill: none;
     stroke-width: 10;
     stroke-linecap: round;
-    transform: translate(5px, 5px);
+    transform: translate(12px, 5px);
 }
 
 main .analyze .profits svg circle {
@@ -319,7 +319,7 @@ main .analyze .exchanges svg circle {
 main .analyze .progress .percentage {
     position: absolute;
     top: -3px;
-    left: -1px;
+    left: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -567,6 +567,7 @@ main .recent-subrentals a {
 }
 
 /** Media Queries */
+/* Tablet */
 @media screen and (max-width: 1200px) {
     .container {
         width: 95%;
@@ -600,15 +601,15 @@ main .recent-subrentals a {
     }
 
     main .recent-subrentals {
-        width: 94%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 2rem 0 0 0.8rem;
+        width: 100%;
+        position: relative;
+        left: auto;
+        transform: none;
+        margin: 2rem 0 0 0;
     }
 
     main .recent-subrentals table {
-        width: 83vw;
+        width: 100%;
     }
 
     main table thead tr th:last-child,
@@ -622,7 +623,8 @@ main .recent-subrentals a {
     }
 }
 
-@media screen and (max-width: 768px) {
+/* Phone */
+@media screen and (max-width: 769px) {
     .container {
         width: 100%;
         grid-template-columns: 1fr;
@@ -716,7 +718,7 @@ main .recent-subrentals a {
     .right-section .nav .dark-mode {
         width: 4.4rem;
         position: absolute;
-        left: 66%;
+        left: 78%;
     }
 
     .right-section .profile .info {
@@ -734,5 +736,12 @@ main .recent-subrentals a {
 
     .right-section .nav button span {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    aside {
+        display: block;
+        left: 0;
     }
 }
