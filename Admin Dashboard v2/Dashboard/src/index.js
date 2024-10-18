@@ -1,4 +1,3 @@
-
 //* Function - Highlight Selected Sidebar Tab
 const sideLinks = document.querySelectorAll('.sidebar .side-menu li a:not(.logout)');
 

@@ -1,7 +1,7 @@
 /** Imported CSS Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/** Variable Deceleration */
+/** Variable Declaration */
 :root {
     /** Color Palette Variables */
     --light: #f6f6f9;
@@ -18,7 +18,7 @@
     --light-success: #BBF7D0;
 }
 
-/** Application - General Setup */
+/** Application - General */
 * {
     margin: 0;
     padding: 0;
@@ -176,7 +176,7 @@ body {
     color: var(--primary);
 }
 
-/** Main Content - General Class */
+/** Main Content - General */
 .content {
     position: relative;
     width: calc(100% - 230px);
@@ -269,6 +269,8 @@ body {
 /** Nav - Notification Icon */
 .content nav .notif {
     font-size: 20px;
+    left: 2.5px;
+    top: 3px;
     position: relative;
 }
 
@@ -299,14 +301,67 @@ body {
 }
 
 /** Nav - Toggle Button */
-.content nav .theme-toggle {
-    display: block;
-    min-width: 50px;
+.content nav label {
+    width: 10px;
     height: 25px;
-    background: var(--grey);
-    cursor: pointer;
-    position: relative;
     border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content nav input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.content nav .sun,
+.content nav .moon {
+    position: absolute;
+    font-size: 1.2em;
+    color: var(--primary);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .5));
+    filter: brightness(100%);
+    transition: .5s;
+}
+
+.content nav .sun {
+    transform: scale(0);
+}
+
+.content nav input:checked ~ .sun {
+    transition-delay: .5s;
+    transform: scale(1) rotate(360deg);
+}
+
+.content nav .moon {
+    transition-delay: .5s;
+}
+
+.content nav input:checked ~ .moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+.content nav .toggle {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 25px;
+    border-radius: 25px;
+    background: var(--light);
+    box-shadow:
+        inset 0 8px 60px rgba(0, 0, 0, .04),
+        inset 0 8px 8px rgba(0, 0, 0, .04),
+        inset 0 -4px 4px rgba(0, 0, 0, .04);
+    z-index: -1;
+    transition: .5s;
+}
+
+.content nav input:checked ~ .toggle {
+    background: var(--light);
 }
 
 .content nav .theme-toggle::before {
@@ -314,15 +369,15 @@ body {
     position: absolute;
     top: 2px;
     left: 2px;
-    bottom: 2px;
-    width: calc(25px - 4px);
+    width: 21px;
+    height: 21px;
     background: var(--primary);
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: .5s;
 }
 
 .content nav #theme-toggle:checked+.theme-toggle::before {
-    left: calc(100% - (25px - 4px) - 2px);
+    left: calc(100% - 23px);
 }
 
 /** Main Content - Header */
@@ -347,7 +402,7 @@ body {
     color: var(--dark);
 }
 
-/** Main Content - Header - Analytics & Shop Tags */
+/** Main Content - Header -  */
 .content main .header .left .breadcrumb {
     display: flex;
     align-items: center;
@@ -444,7 +499,7 @@ body {
     color: var(--dark);
 }
 
-/** Main Content - Subrental -  */
+/** Main Content - Subrental */
 .content main .bottom-data {
     display: flex;
     flex-wrap: wrap;
@@ -542,6 +597,7 @@ body {
     background: var(--warning);
 }
 
+/** Main Content - Reminders */
 .content main .bottom-data .reminders {
     flex-grow: 1;
     flex-basis: 300px;
@@ -587,7 +643,7 @@ body {
     margin-bottom: 0;
 }
 
-/** Main Content - Media Queries - Tablet  */
+/** Main Content - Media Queries */
 @media screen and (max-width: 768px) {
     .sidebar{
         width: 200px;
